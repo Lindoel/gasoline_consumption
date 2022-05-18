@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo anual</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="menu_nav">
+        <div onclick="menu_on()"  class="menu_icon">
+            <hr class="menu_line">
+            <hr class="menu_line">
+            <hr class="menu_line">
+        </div>
+
+        <a id="button_download" class="button_edit_icon">
+            <i id="button_edit" class="fa-solid fa-file-arrow-down" ></i>
+        </a>
+    </nav>
+
+    <section class="screen">
+        <form name="form" class="form">
+            <div class="field_title_form">
+                <h1 class="title">
+                    Controle Anual
+                </h1>
+            </div>
+            <div class="field_form">
+                <input id="input_form1" class="input_form" type="number" name="price" id="price" autocomplete="off" required>
+                <label id="label_form1" class="label_form" for="price">Preço</label>
+            </div>
+            <div class="field_form">
+                <input class="input_form" type="number" name="average" id="average" autocomplete="off" required>
+                <label class="label_form" for="average">Média km/l</label>
+            </div>
+            <div class="field_form">
+                <input class="input_form" type="number" name="km_day" id="km_day" autocomplete="off" required>
+                <label class="label_form" for="km_day">km percorridos por dia</label>
+            </div>
+            <div class="field_form">
+                <input class="input_form" type="number" name="days_week" id="days_week" autocomplete="off" required>
+                <label class="label_form" for="days_week">Dias por semana percorridos</label>
+            </div>
+            
+            <div class="field_button_form">
+                <button class="button">Salvar</button>
+            </div>
+        </form>
+
+        <section class="modal_confirm">
+            <div class="field_icon_modal">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+
+            <div class="data_confirm">
+                
+            </div>
+
+            <div class="field_confirm_buttons">
+                <input onclick="claim()" class="button_modal_confirm" type="button" value="Salvar">
+                <input onclick="cancel()" class="button_modal_confirm" type="button" value="Cancelar">
+            </div>
+        </section>
+
+        <section class="modal_menu">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Gasto Diário</td>
+                        <td>Gasto Semanal</td>
+                        <td>Gasto Mensal</td>
+                        <td>Gasto Anual</td>
+                        <td>Criado em</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Deletar item</td>
+                    </tr>
+                </thead>
+                <tbody class="actions">
+                    
+                </tbody>
+            </table>
+        </section>
+   
+    </section> <!-- .screen -->
+
+    <footer class="footer">
+        
+        <div class="single_field_footer">
+            <h4 class="sub_title">Endereço</h4>
+            
+            <span class="field_address">
+                <a target="_blank" href="https://www.google.com/maps/@-23.0941907,-46.849252,182m/data=!3m1!1e3!5m1!1e4">
+                    <p class="address_localization">
+                        Av. Benedicto Fagundes, 112 em Jundiaí - SP
+                    </p>
+                </a>
+                
+            </span>
+        </div>
+
+        
+        
+        <div class="single_field_footer">
+            <h4 class="sub_title">Contato</h4>
+            
+            <p class="address_box">
+                <span class="span_address">
+                    (11) 94973-7317
+                </span>
+                
+                <span class="span_address">
+                    lindoegomesdamasceno@gmail.com
+                </span>
+            </p>
+
+            <div class="social">
+                <a target="_blank" href="https://www.instagram.com/lindoel_gomes/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a  href="https://www.linkedin.com/in/lindoel-gomes-131217200/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                
+                <a target="_blank" href="https://github.com/Lindoel">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511949737317&text=Ol%C3%A1%2C%20Lindoel%20Gomes">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="single_field_footer">
+            <h3>&copy;LindoelGomes2022</h3>
+        </div>
+
+    </footer>
+
+    <script  src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/3d7940e60f.js" crossorigin="anonymous"></script>
+</body>
+</html>
